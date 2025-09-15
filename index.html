@@ -13,5 +13,35 @@
     <h1>
         Howdy
     </h1>
+    <div class="dropdown">
+        <button onclick="showMenu()" class="dropbtn">Menu</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#designs">designs</a>
+            <a href="#about">about</a>
+            <a href="#contact">contact</a>
+        </div>
+    </div>
+    
+
+<script>
+// Open dropdown 
+function showMenu() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+//Closes dropdown when clicked outside
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 </body>
 </html>
