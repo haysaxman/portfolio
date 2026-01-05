@@ -1,0 +1,121 @@
+.dropdown-content {
+  display: none;
+}
+
+.show {display: block;}
+
+body {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  max-width: 800px;
+  margin: auto;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.display-text {
+  font-size: 100px;
+  text-align: center;
+  font-weight: 400;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 32px 48px;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 32px 48px;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  column-gap: 48px;
+  height: min-content;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;  
+}
+
+a:hover { 
+  text-decoration: underline;  
+}
+
+
+#logo {
+  height: 78px;
+  width: 59px;
+}
+
+#logo-group {
+  display: flex;
+  flex-direction: row;
+  column-gap: 48px;
+}
+
+#name-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Funnel Display", sans-serif;
+  margin: 0;
+  color: #00241B;
+}
+
+p {
+  font-family: "Funnel Sans", sans-serif;
+  margin: 0;
+  color: #00241B;
+}
+
+.icon-button {
+  height: min-content;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.card-title {
+  font-size: 32px;
+}
+
+.card-link {
+  color: #4E878C;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 32px;
+  row-gap: 32px;
+}
+
+.pill {
+  padding: 4px 12px;
+  background-color: #B5FFE1;
+  border-radius: 14px;
+  height: fit-content;
+  width: fit-content;
+}

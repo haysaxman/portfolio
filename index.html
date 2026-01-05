@@ -1,16 +1,68 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/src/style.css" rel="stylesheet">
-    <title>portfolio</title>
-  </head>
-  <body>
-    <div id="app">
-      <h1 class="text-3xl font-bold underline">    Hello world!  </h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hayden Chapple</title>
+  <link rel="stylesheet" href="src/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<style>
+
+
+</style>
+</head>
+<body>
+    <!-- <img src="images/background-image2.svg" style="position: absolute; width: 100vw; top: 0; z-index: -1;"> -->
+    <header>
+      <a href="index" id="logo-group">
+        <img src="images/logo.svg" id="logo">
+        <div id="name-group">
+          <h1>Hayden Chapple</h1>
+          <p>Product Designer & Developer<p>
+        </div>
+      </a>
+      <nav> 
+          <a href="work"><p>Work</p></a>
+          <a href="about"><p>About</p></a>
+      </nav>
+    </header>
+    <div class="content">
+      <h1 class="display-text">
+        Designing with <b>simplicity</b> and <b>practicality</b> in mind.
+      </h1>
     </div>
-    <!-- <script type="module" src="/src/main.ts"></script> -->
-  </body>
+    <!-- <div class="dropdown">
+        <button onclick="showMenu()" class="dropbtn">Menu</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="designs">work</a>
+            <a href="about">about</a>
+        </div>
+    </div> -->
+  <footer>
+    <p>Hayden Chapple 2026</p>
+    <a clss="icon-button" target="_blank" href="https://www.linkedin.com/in/haydenchapple/"><img src="images/linkedin-logo.svg"></a>
+    <p><a href="work">Work</a> | <a href="about">About</a></p>
+  </footer>
+
+<script>
+// Open dropdown 
+function showMenu() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+//Closes dropdown when clicked outside
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</body>
 </html>
