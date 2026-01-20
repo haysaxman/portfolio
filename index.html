@@ -11,11 +11,17 @@
 
 </style>
 </head>
-<body>
+<body class="relative">
     <!-- <img src="images/background-image2.svg" style="position: absolute; width: 100vw; top: 0; z-index: -1;"> -->
-    <header>
+    <div class="block w-full -z-10 absolute">
+      <div class="lg:h-64 md:h-96 h-128" style="background-color: #B5FFE1;"></div>
+      <div class="">
+        <img src="/images/cover-image.svg">
+      </div>
+    </div>
+    <header class="sticky">
       <a href="index" id="logo-group">
-        <img src="images/logo.svg" id="logo">
+        <img src="/images/logo.svg" id="logo">
         <div id="name-group">
           <h1>Hayden Chapple</h1>
           <p>Product Designer & Developer<p>
@@ -26,10 +32,59 @@
           <a href="about"><p>About</p></a>
       </nav>
     </header>
-    <div class="content">
-      <h1 class="display-text">
+    
+    <div class="lg:w-4xl md:w-2xl w-md flex flex-col w-full items-center lg:py-12 py-24 gap-16">
+      <h1 class="z-10 text-center lg:text-8xl/[1.25] md:text-7xl/[1.25] text-6xl/[1.25]">
         Designing with <b>simplicity</b> and <b>practicality</b> in mind.
       </h1>
+      <a href="#work">
+        <img src="images/arrow.svg">
+      </a>
+    </div>
+    <div class="flex flex-col w-4xl gap-4 lg:pt-[640px]">
+        <a id="work"></a>
+        <h1 class="page-title">
+            Work
+        </h1>
+        <div class="grid md:grid-cols-2 grid-cols-1 gap-8 lg:w-4xl w-full ">
+            <div class="card">
+                <p class="pill">Pill example</p>
+                <img class="thumbnail" src="images/placeholder.png">
+                <div class="card-content">
+                    <h3 class="card-title">Title</h3>
+                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non lacus eget ipsum elementum maximus in quis ex. Nullam tristique, purus  nec facilisis consectetur, odio dui posuere lacus, eu gravida metus nibh eu nulla.</p>
+                    <a class="card-link" href="/work/case-study-example.html"><p>Read more ></p></a>
+                </div>
+            </div>
+            <div class="card">
+                <p class="pill">Like-for-like modernisation</p>
+                <img class="thumbnail" src="images/placeholder.png">
+                <div class="card-content">
+                    <h3 class="card-title">Title</h3>
+                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non lacus eget ipsum elementum maximus in quis ex. Nullam tristique, purus  nec facilisis consectetur, odio dui posuere lacus, eu gravida metus nibh eu nulla.</p>
+                    <a class="card-link" href="/work/case-study-example.html"><p>Read more ></p></a>
+                </div>
+            </div>
+            <div class="card">
+                <p class="pill">Like-for-like modernisation</p>
+                <img class="thumbnail" src="images/placeholder.png">
+                <div class="card-content">
+                    <h3 class="card-title">Title</h3>
+                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non lacus eget ipsum elementum maximus in quis ex. Nullam tristique, purus  nec facilisis consectetur, odio dui posuere lacus, eu gravida metus nibh eu nulla.</p>
+                    <a class="card-link" href="work/case-study-example.html"><p>Read more ></p></a>
+                </div>
+            </div>
+            <div class="card">
+                <p class="pill">Like-for-like modernisation</p>
+                <img class="thumbnail" src="images/placeholder.png">
+                <div class="card-content">
+                    <h3 class="card-title">Title</h3>
+                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non lacus eget ipsum elementum maximus in quis ex. Nullam tristique, purus  nec facilisis consectetur, odio dui posuere lacus, eu gravida metus nibh eu nulla.</p>
+                    <a class="card-link" href="work/case-study-example.html"><p>Read more ></p></a>
+                </div>
+            </div>
+        </div>
+        
     </div>
     <!-- <div class="dropdown">
         <button onclick="showMenu()" class="dropbtn">Menu</button>
@@ -41,8 +96,9 @@
   <footer>
     <p>Hayden Chapple 2026</p>
     <a clss="icon-button" target="_blank" href="https://www.linkedin.com/in/haydenchapple/"><img src="images/linkedin-logo.svg"></a>
-    <p><a href="work">Work</a> | <a href="about">About</a></p>
+    <p class="text-right"><a href="work">Work</a> | <a href="about">About</a></p>
   </footer>
+
 
 <script>
 // Open dropdown 

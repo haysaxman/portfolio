@@ -1,3 +1,11 @@
+@import "tailwindcss";
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Funnel Display", sans-serif;
+  margin: 0;
+  color: #00241B;
+}
+
 .dropdown-content {
   display: none;
 }
@@ -9,6 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  align-items: center;
 }
 
 .content {
@@ -31,6 +40,13 @@ header {
   justify-content: space-between;
   padding: 32px 48px;
   align-items: center;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
 }
 
 footer {
@@ -39,6 +55,11 @@ footer {
   justify-content: space-between;
   padding: 32px 48px;
   align-items: center;
+  width: 100%;
+}
+
+footer p {
+  width: 200px;
 }
 
 nav {
@@ -75,11 +96,7 @@ a:hover {
   justify-content: space-around;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Funnel Display", sans-serif;
-  margin: 0;
-  color: #00241B;
-}
+
 
 p {
   font-family: "Funnel Sans", sans-serif;
@@ -94,28 +111,43 @@ p {
 .card {
   display: flex;
   flex-direction: column;
+  /* border: #D9D9D9 solid 1px; */
+  position: relative;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16); 
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
   row-gap: 16px;
+  padding: 16px;
+}
+
+.card .pill {
+  position: absolute;
+  inset: 16px;
 }
 
 .card-title {
   font-size: 32px;
 }
 
-.card-link {
+.card-link p {
   color: #4E878C;
 }
 
-.card-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  column-gap: 32px;
-  row-gap: 32px;
-}
-
 .pill {
-  padding: 4px 12px;
+  padding: 2px 12px;
   background-color: #B5FFE1;
   border-radius: 14px;
   height: fit-content;
   width: fit-content;
+}
+
+.page-title {
+  font-size: 48px;
+}
+
+a h4 {
+  color: #4E878C;
 }
