@@ -34,14 +34,14 @@ body {
 
 .content {
   display: flex;
-  max-width: 800px;
+  max-width: 50rem;
   margin: auto;
   min-height: 100vh;
   flex-direction: column;
 }
 
 .display-text {
-  font-size: 100px;
+  font-size: 6.25rem;
   text-align: center;
   font-weight: 400;
 }
@@ -50,13 +50,13 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 32px 48px;
+  padding: 2rem 3rem;
   align-items: center;
   width: auto;
 }
 
 header h1 {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 1;
 }
@@ -65,13 +65,13 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 32px 48px;
+  padding: .125rem 3rem;
   align-items: center;
   width: -webkit-fill-available;
 }
 
 footer p {
-  width: 200px;
+  width: 12.5rem;
 }
 
 footer a {
@@ -81,7 +81,7 @@ footer a {
 nav {
   display: flex;
   flex-direction: row;
-  column-gap: 48px;
+  column-gap: 3rem;
   height: min-content;
 }
 
@@ -111,9 +111,9 @@ nav {
   flex-direction: column;
   background-color: #2A3026;
   position: relative;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16); 
+  box-shadow: 0 .25rem 1rem rgba(0, 0, 0, 0.16); 
   transition: ease .25s;
-  max-width: 600px;
+  max-width: 37.5rem;
 }
 
 .show {
@@ -127,34 +127,34 @@ nav {
 .card-content {
   display: flex;
   flex-direction: column;
-  row-gap: 8px;
-  padding: 16px;
+  row-gap: .5rem;
+  padding: 1rem;
 }
 
 .card .pill {
   position: absolute;
-  inset: 16px;
+  inset: 1rem;
 }
 
 .card-title {
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 .pill {
-  padding: 2px 12px;
+  padding: 0.125rem 0.75rem;
   background-color: #FF9C2B;
   color: #000000;
-  border-radius: 14px;
+  border-radius: 1rem;
   height: fit-content;
   width: fit-content;
   transition: ease .25s;
 }
 
 .btn {
-  padding: 4px 12px;
+  padding: .25rem .75rem;
   color: #FFFFFF;
   border: 1px solid #ffffff;
-  border-radius: 14px;
+  border-radius: 1rem;
   height: fit-content;
   width: fit-content;
   transition: ease .25s;
@@ -180,12 +180,12 @@ a {
 }
 
 .link p {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.75);
-  padding-bottom:2px;
+  padding-bottom: 0.125rem;
   background-image: linear-gradient(#fff 0 0);
   background-position: 0 100%; /*OR bottom left*/
-  background-size: 0% 2px;
+  background-size: 0% 0.125rem;
   background-repeat: no-repeat;
   transition:
     color 0.3s,
@@ -196,7 +196,7 @@ a {
 .link:hover p {
   color: #fff;
   background-position: 100% 100%; /*OR bottom right*/
-  background-size: 100% 2px;
+  background-size: 100% 0.125rem;
 }
 
 /* .link::after {
@@ -230,7 +230,7 @@ a {
   display: grid;
   grid-template-columns: auto;
   width: auto;
-  gap: 36px;
+  gap: 2.25rem;
 }
 
 .container {
@@ -239,8 +239,8 @@ a {
 }
 
 .container-full, .container-md, .container-sm {
-  padding: 32px;
-  gap: 32px;
+  padding: 2rem;
+  gap: 2rem;
   width: auto;
   min-height: 100vh;
 }
@@ -248,35 +248,35 @@ a {
 .content-container {
   display: grid;
   grid-template-columns: auto;
-  gap: 32px;
+  gap: 2rem;
 }
 
 #btnContainer {
   display: flex;
   flex-direction: row;
-  gap: 8px;
+  gap: .5rem;
 }
 
 #hero-text {
-  max-width: 896px;
+  max-width: 56rem;
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 #about-content {
   display: flex;
   flex-direction: column-reverse;
-  gap: 16px;
+  gap: 1rem;
 }
 
 #portrait {
-  width: 188px;
+  width: 11.75rem;
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   border-radius: 9999px;
 }
@@ -289,7 +289,7 @@ h2 {
 /* Medium */
 @media (width >= 48rem) { 
   h1 {
-    font-size: 48px;
+    font-size: 3rem;
   }
 
   #about-content {
@@ -297,7 +297,7 @@ h2 {
   }
 
   #portrait {
-    width: 256px;
+    width: 16rem;
   }
 
   .card-container {
@@ -306,25 +306,25 @@ h2 {
 }
 
 /* Large */
-@media (width >= 1024px) { 
+@media (width >= 64rem) { 
   h1 {
-    font-size: 72px;
+    font-size: 4.5rem;
   }
   h2 {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
   .container-full { 
-    padding: 96px;
+    padding: 6rem;
   }
 
   .container-md { 
-    padding: 48px;
-    width: 1024px;
+    padding: 3rem;
+    width: 64rem;
   }
 
   .container-sm { 
-    padding: 96px;
-    width: 896px;
+    padding: 6rem;
+    width: 56rem;
   }
 
   .content-container {
@@ -333,7 +333,7 @@ h2 {
 }
 
 /* Extra Large */
-@media (width >= 1280px) { 
+@media (width >= 80rem) { 
   .card-container {
     grid-template-columns: auto auto auto;
   }
