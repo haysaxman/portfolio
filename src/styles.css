@@ -4,6 +4,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: "Petrona", sans-serif;
   margin: 0;
   color: #FFFFFF;
+  font-weight: 400;
 }
 
 .dropdown-content {
@@ -51,7 +52,7 @@ header {
   justify-content: space-between;
   padding: 32px 48px;
   align-items: center;
-  width: 100%;
+  width: auto;
 }
 
 header h1 {
@@ -66,11 +67,15 @@ footer {
   justify-content: space-between;
   padding: 32px 48px;
   align-items: center;
-  width: 100%;
+  width: -webkit-fill-available;
 }
 
 footer p {
   width: 200px;
+}
+
+footer a {
+  color: #FFFFFF;
 }
 
 nav {
@@ -146,7 +151,7 @@ nav {
 }
 
 .btn {
-  padding: 2px 12px;
+  padding: 4px 12px;
   color: #FFFFFF;
   border: 1px solid #ffffff;
   border-radius: 14px;
@@ -165,7 +170,12 @@ nav {
   color: #000000;
 }
 
+a {
+  text-decoration: none;
+}
+
 .link {
+  
   width: fit-content;
 }
 
@@ -210,7 +220,7 @@ nav {
 
 .divider {
   /* width: 100%; */
-  width: 100%;
+  width: auto;
   height: 1px;
   background-color: rgba(255, 255, 255, 0.5);
   border-color: rgba(255, 255, 255, 0.5);
@@ -218,8 +228,8 @@ nav {
 
 .card-container {
   display: grid;
-  grid-auto-columns: 1;
-  width: 100%;
+  grid-template-columns: auto;
+  width: auto;
   gap: 36px;
 }
 
@@ -228,22 +238,16 @@ nav {
   flex-direction: column;
 }
 
-.container-full, .container-md {
+.container-full, .container-md, .container-sm {
   padding: 32px;
   gap: 32px;
-  width: 100%;
+  width: auto;
   min-height: 100vh;
-}
-
-.container-sm {
-  padding: 32px;
-  gap: 32px;
-  width: 100%;
 }
 
 .content-container {
   display: grid;
-  grid-auto-columns: 1;
+  grid-template-columns: auto;
   gap: 32px;
 }
 
@@ -272,13 +276,9 @@ h2 {
 }
 
 #portrait {
-  width: 256px;
+  width: 188px;
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   border-radius: 9999px;
-}
-
-.footer-links {
-  
 }
 
 /* Small */
@@ -297,11 +297,11 @@ h2 {
   }
 
   #portrait {
-    width: 512px;
+    width: 256px;
   }
 
   .card-container {
-    grid-auto-columns: 2;
+    grid-template-columns: auto auto;
   }
 }
 
@@ -328,13 +328,13 @@ h2 {
   }
 
   .content-container {
-    grid-auto-columns: 2;
+    grid-template-columns: auto auto;
   }
 }
 
 /* Extra Large */
 @media (width >= 1280px) { 
   .card-container {
-    grid-auto-columns: 3;
+    grid-template-columns: auto auto auto;
   }
 }
