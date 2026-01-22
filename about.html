@@ -8,25 +8,24 @@
   <link rel="stylesheet" href="/src/styles.css">
 </head>
 <body>
-    <div class="flex flex-col lg:p-24 p-8 gap-8 w-full lg:w-4xl min-h-screen">
-        <div class="flex flex-col gap-2">
-          <a href="index" class="w-fit link"><p class="text-2xl">< Back</p></a>
+    <div class="container container-sm">
+        <div class="flex-col gap-2" style="gap: 8px;">
+          <a href="index" class="link"><p>< Back</p></a>
           <h1 class="page-title">About me</h1> 
         </div>
         
-        <div class="flex-col flex gap-8">
-            <div class="flex-col md:flex-row flex gap-4 flex-col-reverse">
+        <div class="flex-col" style="gap: 16px">
+            <div id="about-content">
                 <p>
                     I&#8217;m a Product Designer with Front-end Development experience and a passion for producing functional and accessible software.
                     <br><br>Working directly with developers has allowed me to gain deeper understanding of how software is made which bridges the gap between design and development. 
                     <br><br>When designing, I keep the  implementation in mind to make achievable designs and consider what functionality could be reused or extended to achieve the design goal.
                 </p>
                 <div>
-                    <img id="portrait" class="rounded-full w-64 md:w-lg shadow-lg" src="images/hayden.jpg">
+                    <img id="portrait" src="images/hayden.jpg">
                 </div>
-                
             </div>
-            <div class="flex flex-row gap-3">
+            <div class="flex-row" style="gap: 12px">
               <a class="btn" target="_blank" href="https://www.linkedin.com/in/haydenchapple/"><p>My LinkedIn</p></a>
               <a class="btn" target="_blank" href="files/Hayden Chapple Resume 2025-09-22-1.pdf"><p>My Resume</p></a>
             </div>
@@ -35,7 +34,7 @@
     <footer>
         <p>Hayden Chapple 2026</p>
         <a clss="icon-button" target="_blank" href="https://www.linkedin.com/in/haydenchapple/"><img src="images/linkedin-logo.svg"></a>
-        <p class="text-right"><a href="/index">Home</a> | <a href="/about">About</a></p>
+        <p style="text-align: right;"><a href="/index">Home</a> | <a href="/about">About</a></p>
     </footer>
 </body>
 </html>

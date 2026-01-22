@@ -1,4 +1,4 @@
-@import "tailwindcss";
+/* @import "tailwindcss"; */
 
 h1, h2, h3, h4, h5, h6, p {
   font-family: "Petrona", sans-serif;
@@ -11,6 +11,16 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .show {display: block;}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
 
 body {
   background-color: #516851;
@@ -155,7 +165,12 @@ nav {
   color: #000000;
 }
 
+.link {
+  width: fit-content;
+}
+
 .link p {
+  font-size: 24px;
   color: rgba(255, 255, 255, 0.75);
   padding-bottom:2px;
   background-image: linear-gradient(#fff 0 0);
@@ -199,4 +214,127 @@ nav {
   height: 1px;
   background-color: rgba(255, 255, 255, 0.5);
   border-color: rgba(255, 255, 255, 0.5);
+}
+
+.card-container {
+  display: grid;
+  grid-auto-columns: 1;
+  width: 100%;
+  gap: 36px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-full, .container-md {
+  padding: 32px;
+  gap: 32px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container-sm {
+  padding: 32px;
+  gap: 32px;
+  width: 100%;
+}
+
+.content-container {
+  display: grid;
+  grid-auto-columns: 1;
+  gap: 32px;
+}
+
+#btnContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+#hero-text {
+  max-width: 896px;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+#about-content {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 16px;
+}
+
+#portrait {
+  width: 256px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  border-radius: 9999px;
+}
+
+.footer-links {
+  
+}
+
+/* Small */
+@media (width >= 40rem) { 
+
+}
+
+/* Medium */
+@media (width >= 48rem) { 
+  h1 {
+    font-size: 48px;
+  }
+
+  #about-content {
+    flex-direction: row;
+  }
+
+  #portrait {
+    width: 512px;
+  }
+
+  .card-container {
+    grid-auto-columns: 2;
+  }
+}
+
+/* Large */
+@media (width >= 1024px) { 
+  h1 {
+    font-size: 72px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .container-full { 
+    padding: 96px;
+  }
+
+  .container-md { 
+    padding: 48px;
+    width: 1024px;
+  }
+
+  .container-sm { 
+    padding: 96px;
+    width: 896px;
+  }
+
+  .content-container {
+    grid-auto-columns: 2;
+  }
+}
+
+/* Extra Large */
+@media (width >= 1280px) { 
+  .card-container {
+    grid-auto-columns: 3;
+  }
 }
