@@ -63,11 +63,16 @@ header h1 {
 
 footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  padding: .125rem 3rem;
+  gap: 1rem;
+  padding: 1rem 2rem;
   align-items: center;
   width: -webkit-fill-available;
+}
+
+.footer-text-left, .footer-text-right {
+  text-align: center;
 }
 
 footer p {
@@ -283,7 +288,7 @@ h2 {
 
 /* Small */
 @media (width >= 40rem) { 
-
+  
 }
 
 /* Medium */
@@ -302,6 +307,16 @@ h2 {
 
   .card-container {
     grid-template-columns: auto auto;
+  }
+
+  footer {
+    flex-direction: row;
+  }
+  .footer-text-left {
+    text-align: left;
+  }
+  .footer-text-right {
+    text-align: right;
   }
 }
 
