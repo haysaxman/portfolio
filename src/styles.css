@@ -146,7 +146,7 @@ nav {
 }
 
 .pill {
-  padding: 0.125rem 0.75rem;
+  padding: 0.25rem 0.75rem;
   background-color: #FF9C2B;
   color: #000000;
   border-radius: 1rem;
@@ -180,12 +180,11 @@ a {
 }
 
 .link {
-  
+  display: inline-block;
   width: fit-content;
 }
 
-.link p {
-  font-size: 1.5rem;
+.link p, .link h2 {
   color: rgba(255, 255, 255, 0.75);
   padding-bottom: 0.125rem;
   background-image: linear-gradient(#fff 0 0);
@@ -274,6 +273,12 @@ h2 {
   font-size: 1.5rem;
 }
 
+h3 {
+  font-size: 1.25 rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
 #about-content {
   display: flex;
   flex-direction: column-reverse;
@@ -334,12 +339,12 @@ h2 {
 
   .container-md { 
     padding: 3rem;
-    width: 64rem;
+    max-width: 64rem;
   }
 
   .container-sm { 
     padding: 6rem;
-    width: 56rem;
+    max-width: 56rem;
   }
 
   .content-container {
