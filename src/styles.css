@@ -1,10 +1,31 @@
 /* @import "tailwindcss"; */
 
-h1, h2, h3, h4, h5, h6, p {
+body {
+  background-color: #E7F2EA;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-family: "Petrona", sans-serif;
   margin: 0;
-  color: #FFFFFF;
+  color: #516851;
   font-weight: 400;
+}
+
+p, li{
+  font-family: "Petrona", sans-serif;
+  margin: 0;
+  color: #3F4C3D;
+  font-weight: 400;
+}
+
+.caption {
+  color: #658868;
+  font-style: italic;
 }
 
 .dropdown-content {
@@ -23,14 +44,7 @@ h1, h2, h3, h4, h5, h6, p {
   flex-direction: row;
 }
 
-body {
-  background-color: #516851;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-}
+
 
 .content {
   display: flex;
@@ -80,7 +94,7 @@ footer p {
 }
 
 footer a {
-  color: #FFFFFF;
+  color: #3F4C3D;
 }
 
 nav {
@@ -114,7 +128,7 @@ nav {
 .card {
   display: none;
   flex-direction: column;
-  background-color: #2A3026;
+  background-color: #fff;
   position: relative;
   box-shadow: 0 .25rem 1rem rgba(0, 0, 0, 0.16); 
   transition: ease .25s;
@@ -126,7 +140,7 @@ nav {
 }
 
 .card:hover {
-  background-color: #22261F;
+  background-color: #C5DECD;
 }
 
 .card-content {
@@ -145,14 +159,40 @@ nav {
   font-size: 2rem;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 4rem;
+}
+
+.content-image {
+  box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.16); 
+}
+
+.content-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.content-block h2 { 
+  width: 100%;
+}
+
 .pill {
   padding: 0.25rem 0.75rem;
-  background-color: #FF9C2B;
+  background-color: #FF9A62;
   color: #000000;
   border-radius: 1rem;
   height: fit-content;
   width: fit-content;
   transition: ease .25s;
+  box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.16); 
 }
 
 .btn {
@@ -167,8 +207,8 @@ nav {
 }
 
 .btn:hover, .btn.active {
-  background-color: #FF9C2B;
-  border-color: #FF9C2B;
+  background-color: #FF9A62;
+  border-color: #FF9A62;
 }
 
 .btn.active p, .btn:hover p  {
@@ -185,9 +225,9 @@ a {
 }
 
 .link p, .link h2 {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(81, 104, 81, 0.75);
   padding-bottom: 0.125rem;
-  background-image: linear-gradient(#fff 0 0);
+  background-image: linear-gradient(#516851 0 0);
   background-position: 0 100%; /*OR bottom left*/
   background-size: 0% 0.125rem;
   background-repeat: no-repeat;
@@ -197,10 +237,20 @@ a {
     background-position 0s 0.3s; /*change after the size immediately*/
 }
 
+.link.accent p {
+  color: #FF9A62;
+  background-image: linear-gradient(#FF9A62 0 0);
+
+}
+
 .link:hover p {
-  color: #fff;
+  color: #516851;
   background-position: 100% 100%; /*OR bottom right*/
   background-size: 100% 0.125rem;
+}
+
+.link:hover.accent p {
+  color: #FF9A62;
 }
 
 /* .link::after {
@@ -226,8 +276,8 @@ a {
   /* width: 100%; */
   width: auto;
   height: 1px;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(81, 104, 81, 0.5);
+  border-color: rgba(81, 104, 81, 0.5);
 }
 
 .card-container {
@@ -249,11 +299,7 @@ a {
   min-height: 100vh;
 }
 
-.content-container {
-  display: grid;
-  grid-template-columns: auto;
-  gap: 2rem;
-}
+
 
 #btnContainer {
   display: flex;

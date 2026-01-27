@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Work</title>
+<title>Truis Connect Renewals Redesign</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,11 +9,11 @@
 <link rel="stylesheet" media="all" href="src/styles.css">
 </head>
 <body>
-  <div class="container container-md">
+  <div class="container container-sm" style="max-width: 600px;">
     <a href="index" class="link"><h2>< Back</h2></a>
-    <img src="images/truis-connect-renewals.png" height="288px">
-    <div class="content-container">
-      <h2>Truis Connect Renewals Redesign</h2> 
+    <!-- <img src="images/truis-connect-renewals.png" height="288px"> -->
+    <div class="flex-col" style="gap: 3rem;">
+      <h1>Truis Connect Renewals Redesign</h1> 
       <p>
         Truis Connect is a customer portal used by customers and staff of Truis to track and manage
         their orders, assets, renewals and health of their systems. After the Orders page redesign was
@@ -25,43 +25,49 @@
         Developer. The challenge with this project was our lack of human resources, therefore I had to
         take on two roles during the project lifecycle.
       </p>
-      <img src="images/placeholder.png" height="288px">
-      <span>
-        <h3>
-          Process plan
-        </h3>
+      <div class="content-block">
+        <h2>Process plan</h2>
         <p>
           For this project I pushed for having a bigger focus on the design stage of the project by
           creating a concise project plan, outlining the process of the design, the goal for each stage
           and what had to be done.
         </p>
-        <br>
-        <p>
+        <span>
+
+        <p style="display: inline;">
           To view the process plan and design doc in full on Figma: 
         </p>
-        <a class="link" target="_blank" href="https://www.figma.com/board/CrmOGOlcWENbPsJQ2aXpB6/Renewals-UX-design?node-id=0-1&p=f"><p>Click here</p></a>
-        <br/>
-        <br/>
-        <h3>Interviews</h3>
-        <p>
-          I first planned a few interviews with the internal staff and customers that frequently use the
-          existing Renewals page. Unfortunately, customers were too busy or not comfortable with
-          being interviewed, so instead I interviewed our IT Manager as a stand-in as they perform the
-          same role internally as our target audience. Although this may have created some bias and
-          a smaller sample size, it was a better alternative than no data collected.
-        </p>
-      </span>
-      <img src="images/placeholder.png" height="288px">
-      <span>
-        <h3>User Persona</h3>
+          <a class="link accent" target="_blank" href="https://www.figma.com/board/CrmOGOlcWENbPsJQ2aXpB6/Renewals-UX-design?node-id=0-1&p=f"><p>Click here</p></a>
+        </span>
+        </div>
+        <div class="content-block">
+          <h2>Interviews</h2>
+          <p>
+            I first planned a few interviews with the internal staff and customers that frequently use the
+            existing Renewals page. Unfortunately, customers were too busy or not comfortable with
+            being interviewed, so instead I interviewed our IT Manager as a stand-in as they perform the
+            same role internally as our target audience. Although this may have created some bias and
+            a smaller sample size, it was a better alternative than no data collected.
+          </p>
+          <div class="flex-col" style="width: 100%; align-items: center; gap: 1rem;">
+            <img class="content-image" src="images/truis-renewals-interview-findings.png" height="288px">
+            <p class="caption">Some of the key points from the interviews</p>
+          </div>
+        </div>
+      <div class="content-block">
+        <h2>User Persona</h2>
         <p>
           Using the existing user persona created from the marketing team, I included goals and
           frustrations of the target audience that were discovered from previous customer interviews
           from our own IT Manager.
         </p>
-        <br/>
-        <br/>
-        <h3>User Journey Map</h3>
+        <div class="flex-col" style="width: 100%; align-items: center; gap: 1rem;">
+          <img class="content-image" src="images/truis-renewals-persona.png" height="288px">
+          <p class="caption">User persona expanded on from the Marketing research</p>
+        </div>
+      </div>
+      <div class="content-block">
+        <h2>User Journey Map</h2>
         <p>
           I took goals from the persona and explored how the user would go about achieving their
           goals using the existing renewals page. This outlined many common drawbacks and
@@ -69,75 +75,110 @@
           problems with the existing Renewals: Lack of user agency, data inconsistency and lack of
           meaningful organisation.
         </p>
-      </span>
-      <img src="images/placeholder.png" height="288px">
-      <span>
-        <h3>Contextual Reviews</h3>
+        <div class="flex-col" style="width: 100%; align-items: center; gap: 1rem;">
+          <img class="content-image" src="images/truis-renewals-user-journey.png" height="288px">
+          <p class="caption">One of the user journey maps created</p>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <h2>Contextual Reviews</h2>
         <p>
           Next, I explored how other websites and apps went about managing their renewals. With
           these new perspectives I had a wider range of apps and websites that I could draw
           inspiration from. I used these platforms and took notes on what made them efficient or not
           user friendly and why, with the intention to be more informed in my own designs.
         </p>
-        
-        <br>
-        <br>
-        <h3>Brainstorming</h3>
+        <div class="flex-col" style="width: 100%; align-items: center; gap: 1rem;">
+          <img class="content-image" src="images/truis-renewals-context-reviews.png" height="288px">
+          <p class="caption">Exploration of ideas from similar platforms</p>
+        </div>
+      </div>
+      <div class="content-block">
+        <h2>Brainstorming</h2>
         <p>
           I brought the Development team together to a white board and we worked together to come
           up with ideas for a redesign of the Renewals page. We used ideas from the contextual
           reviews and the interviews to highlight opportunities to improve our own platform.
         </p>
-      </span>
-      <img src="images/placeholder.png" height="288px">
-      <span>
-        <h3>Task Flow Diagram</h3>
+        <div class="flex-col" style="width: 100%; align-items: center; gap: 1rem;">
+          <img class="content-image" src="images/truis-renewals-brainstorming.png" height="288px">
+          <p class="caption">Collection of ideas that were brainstormed and categorised into 3 points</p>
+        </div>
+      </div>
+      <div class="content-block">
+        <h2>User Flow Diagram</h2>
         <p>
           With the key features we outlined in the brainstorming I explored the steps a user could take
           to complete all of the possible tasks and their goals. I made multiple iterations of each
           process and then discussed with the team to determine the best flow.
         </p>
-        <br>
-        <br>
-        <h3>Wireframes</h3>
+        <div class="flex-col" style="width: 100%; align-items: center; gap: 1rem;">
+          <img class="content-image" src="images/truis-renewals-user-flow.png" style="max-width: 320px;">
+          <p class="caption">User flow diagrams of one of the tasks identified</p>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <h2>Wireframes</h2>
         <p>
           I iterated on wireframes using Figma that incorporated all the task flows, colouring it based on
           hierarchy of information. Later as I developed the wire frames, I also began to look at the visual
           hierarchy to ensure the user understands the difference between sections and to focus on the
           important elements of each section.
         </p>
-      </span>
-      <img src="images/placeholder.png" height="288px">
-      <span>
-        <h3>High fidelity design</h3>
+        <div class="flex-row" style="gap: 1rem;">
+          <img class="content-image" style="width: 318px" src="images/truis-renewal-mockup-1.png" >
+          <img class="content-image" style="width: 265px" src="images/truis-renewal-mockup-2.png" >
+        </div>
+      </div>
+      
+      <div class="content-block">
+        <h2>High fidelity design</h2>
         <p>
           To save on time we acquired a bootstrap theme which combined multiple JavaScript plugins
           that allowed for easy building of a basic and interactive page based on the wireframes.
           When the design was iterated on further, it would be explored as a wireframe, reviewed and
           then put together in HTML.
         </p>
-        <br/>
-        <br/>
-        <h3>
-          User testing
-        </h3>
+        <img class="content-image" src="images/truis-renewals-final.png" height="288px">
+      </div>
+      <div class="content-block">
+        <h2>User testing</h2>
         <p>
           Internal user testing was done frequently to discover bugs and design flaws to iterate on the
           design and improve the overall user experience.
         </p>
-      </span>
-      <h2>Outcomes and lessons</h2> 
-      <p>
-        As of writing this the Renewals redesign is still in-progress therefore the success of the
-        redesign cannot be reviewed. One of the main issues with the original Renewals page was the
-        data inaccuracy. This is an issue that comes from the automated process that creates
-        renewals from deal records. To solve this we an designed and developed an admin page for
-        a chosen staff member to valid the data before creating each renewal. Having spent more
-        time on the design process I am more confident that it improves the user experience. If I
-        could start this project again, I would have focused more on creating design docs that gave
-        diagrams and flows visually for myself to follow more closely during development and to not
-        lose sight of the core ideas.
-      </p>
+      </div>
+      <div class="content-block">
+        <h2>Outcomes and lessons</h2> 
+        <p>
+          As of writing this the Renewals redesign is still in-progress therefore the success of the
+          redesign cannot be reviewed. One of the main issues with the original Renewals page was the
+          data inaccuracy. This is an issue that comes from the automated process that creates
+          renewals from deal records. To solve this we an designed and developed an admin page for
+          a chosen staff member to valid the data before creating each renewal. Having spent more
+          time on the design process I am more confident that it improves the user experience. If I
+          could start this project again, I would have focused more on creating design docs that gave
+          diagrams and flows visually for myself to follow more closely during development and to not
+          lose sight of the core ideas.
+        </p>
+      </div>
+      
+    </div>
+    <div class="divider"></div>
+    <h2>More like this</h2>
+    <div class="card-container" style="height: fit-content;">
+      <a class="card design show" href="truis-connect-orders-redesign">
+        <p class="pill">Design</p>
+        <img class="thumbnail" src="images/truis-orders-final.png">
+        <div class="card-content">
+          <h3 class="card-title">Truis Connect Orders Redesign</h3>
+          <p class="card-description">
+            Truis Connect is a customer portal used by customers and staff of Truis to track and manage their orders, assets, renewals and health of their systems. 
+          </p>
+        </div>
+      </a>
     </div>
   </div>
   <footer>

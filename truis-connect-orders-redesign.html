@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Work</title>
+<title>Truis Connect Orders Redesign</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,11 +9,11 @@
 <link rel="stylesheet" media="all" href="src/styles.css">
 </head>
 <body>
-  <div class="container container-md">
+  <div class="container container-sm" style="max-width: 600px;">
     <a href="index" class="link"><h2>< Back</h2></a>
-    <img src="images/truis-connect-renewals.png" height="288px">
-    <div class="content-container">
-      <h2>Truis Connect Renewals Redesign</h2> 
+    <!-- <img src="images/truis-connect-renewals.png" height="288px"> -->
+    <div class="flex-col" style="gap: 3rem;">
+      <h1>Truis Connect Orders Redesign</h1> 
       <p>
         Truis Connect is a customer portal used by customers and staff of Truis to track and manage
         their orders, assets, renewals and health of their systems. After Truis rebranded, and with
@@ -26,11 +26,8 @@
         was our lack of human resources, therefore I had to take on two roles during the project
         lifecycle.
       </p>
-      <img src="images/placeholder.png" height="288px">
-      <span>
-        <h3>
-          Interviews
-        </h3>
+      <div class="content-block">
+        <h2>Interviews</h2>
         <p>
           I started the project with interviewing stakeholders such as management, customer support
           and also regular users of the existing Orders page. I contacted around 12 customers and
@@ -38,69 +35,111 @@
           Unfortunately I had to wait a couple weeks between organising and conducting the
           interviews, so in the mean time I began the low fidelity designs.
         </p>
-        <br>
-        <p>
-          To view the process plan and design doc in full on Figma: 
-        </p>
-        <a class="link" target="_blank" href="https://www.figma.com/board/CrmOGOlcWENbPsJQ2aXpB6/Renewals-UX-design?node-id=0-1&p=f"><p>Click here</p></a>
-        <br/>
-        <br/>
-        <h3>Low fidelity designs</h3>
-        <p>
-          I started sketching ideas that were highlighted during staff interviews for the existing page.
-          This allowed me to improve existing concepts, as well as the hierarchy and layout to provide
-          better user experience. I constantly got feedback from the stakeholders and iterated on the
-          designs further. I had enough time before the interviews were scheduled that I began to
-          design higher fidelity designs in Figma.
-        </p>
-      </span>
-      <img src="images/placeholder.png" height="288px">
-      <span>
-        <h3>High fidelity designs</h3>
+        <span>
+        <h3>Example questions:</h3>
+        <ul>
+          <li>What goal are you trying to achieve?</li>
+          <li>How would you go about achieving that goal?</li>
+          <li>What are your expectations for an order tracking site?</li>
+          <li>What information is key to you?</li>
+          <li>Where are you most frustrated?</li>
+        </ul>
+        </span>
+      </div>
+        <div class="content-block">
+          <h2>Low fidelity designs</h2>
+          <p>
+            I started sketching ideas that were highlighted during staff interviews for the existing page.
+            This allowed me to improve existing concepts, as well as the hierarchy and layout to provide
+            better user experience. I constantly got feedback from the stakeholders and iterated on the
+            designs further. I had enough time before the interviews were scheduled that I began to
+            design higher fidelity designs in Figma.
+          </p>
+        </div>
+      <div class="content-block">
+        <div class="flex-col" style="width: 100%; align-items: center; gap: 1rem;">
+          <div class="flex-row" style="gap: 1rem;">
+            <img class="content-image" src="images/truis-orders-hifi-1.png" >
+            <img class="content-image" src="images/truis-orders-hifi-2.png" >
+          </div>
+          <p class="caption">High fidelity mockups produced in Figma</p>
+        </div>
+        <h2>High fidelity designs</h2>
         <p>
           Using a Bootstrap template in Figma I quickly made high quality renders of my sketches
           which looked closer to the end product. With my experience with Figma it was easy to set up
           components to allow for quick adjustments to multiple elements at a time. These designs
           were continuously improved on from the stakeholder input.
         </p>
+      </div>
+      <div class="content-block">
         
-        <br>
-        <br>
-        <h3>Persona</h3>
+        <h2>Persona</h2>
         <p>
           Conveniently, we already had a persona completed by the Marketing Team around our
           target audience (IT Managers), thus I used this research as the majority of customer portal
           users was this target audience.
         </p>
-      </span>
-      <img src="images/placeholder.png" height="288px">
-      <span>
-        <h3>Interaction map</h3>
+        <div class="flex-col" style="width: 100%; align-items: center; gap: 1rem;">
+          <img class="content-image" src="images/truis-orders-persona.png" style="max-width: 360px;">
+          <p class="caption">Buyer persona researched and created by the Marketing team</p>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <h2>Interaction map</h2>
         <p>
           I created an interaction map to better understand the flow of the user interactions to help
           streamline and to make sure the prototype accounts for everything.
         </p>
-        <br>
-        <br>
-        <h3>Interactive Prototype</h3>
+        <div class="flex-col" style="width: 100%; align-items: center; gap: 1rem;">
+          <img class="content-image" src="images/truis-orders-interaction-map.png">
+          <p class="caption">Interaction map that explores all the possible paths a user could take</p>
+        </div>
+        
+      </div>
+      <div class="content-block">
+        <h2>Interactive Prototype</h2>
         <p>
           Using the high fidelity prototype created in Figma I was easily able to put together an
           interactive prototype that stakeholders could test to get more in-depth feedback.
         </p>
-      </span>
-      <h2>Outcomes and lessons</h2> 
-      <p>
-        Post release feedback was received well and got only a small amount of suggestions for
-        improvement. This was mostly around adding more data fields and changing how the
-        statuses worked based on customer service processes. Unfortunately, there was a lack of
-        tracking and quantitative feedback data. To rectify this, I tried looking on Google analytics for
-        valuable insights, but because Truis Connect has no home page and first loads the Orders
-        page, the data was skewed. If I were to do this project again with more time and resources, I
-        would have researched more upfront before commencing the design process, interviewed
-        more customers and also conducted testing with users that weren't already stakeholders.
-        Overall, this page design was a big step forward for the user experience design for Truis
-        Connect to align it with the new brand.
-      </p>
+        <a class="link accent" target="_blank" href="https://www.figma.com/board/CrmOGOlcWENbPsJQ2aXpB6/Renewals-UX-design?node-id=0-1&p=f"><p>Click here to view</p></a>
+      </div>
+      <div class="content-block">
+        <h2>Outcomes and lessons</h2> 
+        <p>
+          Post release feedback was received well and got only a small amount of suggestions for
+          improvement. This was mostly around adding more data fields and changing how the
+          statuses worked based on customer service processes. Unfortunately, there was a lack of
+          tracking and quantitative feedback data. To rectify this, I tried looking on Google analytics for
+          valuable insights, but because Truis Connect has no home page and first loads the Orders
+          page, the data was skewed. If I were to do this project again with more time and resources, I
+          would have researched more upfront before commencing the design process, interviewed
+          more customers and also conducted testing with users that weren't already stakeholders.
+          Overall, this page design was a big step forward for the user experience design for Truis
+          Connect to align it with the new brand.
+        </p>
+        <div class="flex-col" style="width: 100%; align-items: center; gap: 1rem;">
+          <img class="content-image" src="images/truis-orders-final.png" height="288px">
+          <p class="caption">Finished design implemented into Truis Connect</p>
+        </div>
+      </div>
+      
+    </div>
+    <div class="divider"></div>
+    <h2>More like this</h2>
+    <div class="card-container" style="height: fit-content;">
+      <a class="card design show" href="truis-connect-renewals-redesign">
+        <p class="pill">Design</p>
+        <img class="thumbnail" src="images/truis-renewals-final.png">
+        <div class="card-content">
+          <h3 class="card-title">Truis Connect Renewals Redesign</h3>
+          <p class="card-description">
+            Truis Connect is a customer portal used by customers and staff of Truis to track and manage their orders, assets, renewals and health of their systems. 
+          </p>
+        </div>
+      </a>
     </div>
   </div>
   <footer>
