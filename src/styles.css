@@ -191,6 +191,11 @@ img {
   width: 100%;
 }
 
+.content-block p { 
+  font-size: 18px;
+  line-height: 2;
+}
+
 .pill {
   padding: 0.25rem 0.75rem;
   background-color: #FF9A62;
