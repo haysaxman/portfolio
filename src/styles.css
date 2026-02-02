@@ -318,7 +318,12 @@ a {
 }
 
 #hero-text {
+  font-weight: 300;
   max-width: 56rem;
+}
+
+#hero-text b {
+  font-weight: 600;
 }
 
 h1 {

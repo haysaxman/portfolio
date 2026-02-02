@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>QGov Scheduling Automation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" media="all" href="src/styles.css">
+</head>
+<body>
+  <div class="container container-sm">
+    <a href="/" class="link"><h2>< Back</h2></a>
+    
+    <!-- <img src="images/truis-connect-renewals.png" height="288px"> -->
+    <div class="flex-col" style="gap: 3rem;">
+          <!-- <img class="content-image" src="images/truis-orders-hero.png" height="288px"> -->
+
+      <h1>QGov Scheduling Automation</h1> 
+      <!-- <p>
+        Truis Connect is a customer portal used by customers and staff of Truis to track and manage
+        their orders, assets, renewals and health of their systems. After Truis rebranded, and with
+        progress being made towards an e-commerce platform, Truis saw it was a priority to update
+        their orders page on Truis Connect. This brought it in-line with their new look, providing a
+        better overall user experience as their e-commerce release brings more traffic to the portal.
+        The target audience are IT Managers of small to medium sized businesses who are typically
+        people who are the first point of contact for our business and any deals made. My role in the
+        project is a UX/UI Designer as well as a Front-end Developer. The challenge with this project
+        was our lack of human resources, therefore I had to take on two roles during the project
+        lifecycle.
+      </p> -->
+      <div class="content-block">
+        <h2>Context</h2>
+        <p>
+I worked on the design of a scheduling system intended to replace an Excel-based workflow. As part of a competitive tender, we were given a fixed set of requirements to adhere to while also addressing clear scalability challenges. The existing process limited how much work could be scheduled and managed, and most of the operational effort was spent manually selecting sites and validating schedules. The complexity was increased by different device types, each with their own processes and constraints, and by the difficulty of identifying when multiple devices were already co-located at the same site.        </p>
+      </div>
+        <div class="content-block">
+          <h2>Design Challenge</h2>
+          <p>
+The core challenge was to transform a highly manual, spreadsheet-driven workflow into a scalable, automated system without losing the flexibility that users relied on in Excel. The solution needed to enable individuals to manage more work, support multiple device types and vendors, and provide better visibility across schedules, locations, and related equipment.          </p>
+        </div>
+      <div class="content-block">
+        <h2>Approach</h2>
+        <p>
+            I focused on designing an automated scheduling workflow that reduced manual decision-making while still allowing human oversight. This included enabling vendors to log progress and confirm completed work, as well as streamlining how they reviewed and provided feedback on proposed schedules.
+A key part of the design was introducing a more robust data model that clearly associated devices, locations, vendors, and schedules, and allowed users to easily navigate between related information. To support rapid alignment, I used a model-driven, breadth-first approach and held frequent design review sessions with the client’s team. These regular check-ins helped maintain transparency and build a shared understanding of the evolving product, particularly as early modelled versions of the application lacked visual polish.
+        </p>
+      </div>
+      <div class="content-block">
+        
+        <h2>Outcomes & Learnings</h2>
+        <p>
+            A lack of clearly defined acceptance criteria led to frequent back-and-forth with the client around scope and expectations. In retrospect, more discovery-focused activities—such as early prototyping and user testing—would have surfaced differences in mental models sooner and reduced ambiguity.
+            The breadth-first approach proved effective for quickly defining the application’s data entities and security model, but it was less well-suited to the user interface. Designing components primarily for desktop early on made it harder to introduce enhancements such as responsive, mobile-friendly variations later in the project. Given the time constraints and evolving understanding of the full scope, many components were designed and built in parallel with the rest of the application, rather than being established as a flexible system upfront.
+            <br>
+            Beyond scheduling, the work highlighted adjacent challenges such as invoicing—particularly comparing vendor invoices against estimated travel distances when real-world conditions required longer journeys. Another key insight was uncovering incorrect early assumptions: scheduling was initially designed around travel from a home base, but the primary use case involved devices moving from site to site. This meant that changes to one location had cascading effects on subsequent schedules, reinforcing the need for more interconnected, system-aware design thinking earlier in the process.consolidation assumptions when visually mapping fields revealed that seemingly duplicated data served different user needs across applications. In future projects, I would visualise these trade-offs earlier to better support shared decision-making with stakeholders.
+        </p>
+      </div>
+
+      
+    </div>
+    <div class="divider"></div>
+    <h2>More like this</h2>
+    <div class="recommended card-container" style="height: fit-content;">
+      <a class="card design show" href="qgov-legacy-modernisation.html">
+        <p class="pill">Design</p>
+        <img class="thumbnail" src="images/placeholder.png">
+        <div class="card-content">
+          <h3 class="card-title">QGov Legacy Modernisation</h3>
+          <p class="card-description">
+            Truis Connect is a customer portal used by customers and staff of Truis to track and manage their orders, assets, renewals and health of their systems. 
+          </p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <footer>
+      <p class="footer-text-left">Hayden Chapple 2026</p>
+      <a clss="icon-button" target="_blank" href="https://www.linkedin.com/in/haydenchapple/"><img src="images/linkedin-logo.svg"></a>
+      <p class="footer-text-right"><a href="/index">Home</a> | <a href="/about">About</a></p>
+  </footer>
+</body>
+</html>
